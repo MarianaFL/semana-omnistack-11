@@ -11,7 +11,7 @@ module.exports = {
             .first();
 
         if (!ngo) {
-            response.status(400).json({error: 'No NGO found'});
+            response.status(403).json({ error: 'No NGO found' });
         }
 
         return response.json(ngo);
